@@ -1,0 +1,68 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    display: flex;
+    height: auto;
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+}
+
+header {
+    background-color: #007bff;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+header h2 {
+    margin: 10px 0;
+    font-size: 1.5em;
+}
+
+section {
+    padding: 20px;
+    margin: 20px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: auto;
+    width: 95%;
+}
+
+h2 {
+    color: #2d3e50;
+    font-size: 1.8em;
+}
+
+p, ul, ol {
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+ul, ol {
+    margin-left: 20px;
+}
+
+footer {
+    text-align: center;
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+}
+
+

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rapport : Analyse & Conception Soli-LMS</title>
+    <link rel="stylesheet" href="rapport.css">
+</head>
+<body>
+    <header>
+        <h1>Rapport : Analyse & Conception Soli-LMS</h1>
+        <h2>Package QCM Apprenant</h2>
+    </header>
+    <section id="chapitre-1">
+        <h2>Chapitre 1 : Introduction</h2>
+        <p>
+            Dans le cadre du développement de l'application <strong>Soli-LMS</strong>, le package <code>pkg_QCM-Apprenant</code> joue un rôle essentiel en fournissant une interface dédiée aux apprenants pour interagir avec les QCM (Questions à Choix Multiples). Ce module est conçu pour répondre aux besoins des utilisateurs en termes d'évaluation continue, de suivi des performances et d'amélioration de l'expérience d'apprentissage.
+        </p>
+        <p>
+            L'objectif principal de ce package est de permettre aux apprenants d'accéder facilement aux QCM créés par les formateurs, de soumettre leurs réponses et de recevoir un feedback instantané sur leurs performances. Ce système offre une manière efficace de renforcer les compétences et de mesurer les progrès dans un cadre pédagogique interactif.
+        </p>
+    </section>
+
+    <section id="chapitre-2">
+        <h2>Chapitre 2 : Besoin</h2>
+        <p>
+            Le besoin principal dans le cadre de l'application <strong>Soli-LMS</strong> est de mettre en place un système d'évaluation interactif et efficace pour les apprenants. Le package <code>pkg_QCM-Apprenant</code> doit permettre aux utilisateurs d'accéder facilement aux QCM créés par les formateurs, de répondre aux questions, et de recevoir un retour immédiat sur leurs performances.
+        </p>
+        <ul>
+            <li><strong>Facilité d'accès</strong> : Offrir une interface intuitive et simple pour les apprenants afin de consulter les QCM disponibles.</li>
+            <li><strong>Évaluation continue</strong> : Permettre un suivi des performances des apprenants au fur et à mesure qu'ils passent les QCM.</li>
+            <li><strong>Feedback instantané</strong> : Fournir un retour immédiat sur les réponses données, permettant ainsi aux utilisateurs de connaître leurs progrès.</li>
+            <li><strong>Suivi des progrès</strong> : Mesurer les progrès des apprenants dans leur parcours d'apprentissage en offrant des statistiques détaillées sur leurs résultats.</li>
+        </ul>
+    </section>
+
+    <section id="chapitre-3">
+        <h2>Chapitre 3 : Design Thinking</h2>
+        <p>
+            Le <strong>Design Thinking</strong> est une méthode créative centrée sur l'utilisateur pour résoudre des problèmes complexes. Elle se compose de cinq étapes clés :
+        </p>
+        <ol>
+            <li><strong>Empathie</strong> : Comprendre les besoins et défis des utilisateurs par des recherches qualitatives.</li>
+            <li><strong>Définition</strong> : Analyser les informations recueillies pour définir clairement le problème à résoudre.</li>
+            <li><strong>Idéation</strong> : Générer un large éventail d'idées sans restrictions.</li>
+            <li><strong>Prototype</strong> : Créer des prototypes simples pour tester les solutions.</li>
+            <li><strong>Test</strong> : Tester les prototypes auprès des utilisateurs et affiner les solutions en fonction des retours.</li>
+        </ol>
+    </section>
+
+    <section id="chapitre-4">
+        <h2>Chapitre 4 : L'empathie</h2>
+        <p>
+            Ce chapitre met en évidence l'importance de comprendre les attentes et émotions des apprenants pour offrir une expérience utilisateur optimale dans le cadre de l'application <strong>Soli-LMS</strong>.
+        </p>
+        <ul>
+            <li><strong>Ce qu'il dit</strong> : "Je veux tester mes connaissances sur ce sujet. Où est le QCM que mon formateur a créé ?"</li>
+            <li><strong>Ce qu'il fait</strong> : L'apprenant se connecte à l'application et navigue jusqu'au QCM.</li>
+            <li><strong>Ce qu'il ressent</strong> : L'apprenant ressent de la curiosité, de la motivation, mais aussi un peu d'anxiété.</li>
+            <li><strong>Ce dont il a besoin</strong> : L'apprenant a besoin d'un accès fluide au QCM, d'un feedback clair et d'un résumé final de ses résultats.</li>
+        </ul>
+    </section>
+
+    <section>
+      <h2>Chapitre 5 : Définition du problème</h2>
+      <p>L'apprenant rencontre des difficultés de navigation et manque de feedback clair, limitant ainsi son autonomie dans l'évaluation de ses connaissances.</p>
+  </section>
+
+
+    <section id="chapitre-5">
+      <div class="chapter">
+        <h2>Chapitre 6 : Ideation</h2>
+        <div class="content">
+            <p><strong>D'accord, je vais expliquer de manière plus claire le diagramme de cas d'utilisation en texte et comment il se relie à l'idéation.</strong></p>
+            
+            <h3>Idéation du Mode d’Apprentissage Adaptatif :</h3>
+            <p>L'idée du mode d'apprentissage adaptatif pour le package <code>pkg_QCM-Apprenant</code> consiste à personnaliser l'expérience d'apprentissage de l'apprenant. En fonction des réponses de l'apprenant, les questions du QCM s'ajustent à son niveau. Si l'apprenant répond incorrectement à une question, il reçoit immédiatement une explication et des ressources supplémentaires pour l'aider à progresser.</p>
+
+            <h3>Diagramme de Cas d'Utilisation (en texte) :</h3>
+            <p><strong>Acteur : Apprenant</strong><br>
+            L’acteur principal est l’apprenant qui interagit avec le système.</p>
+
+            <h3>Cas d’utilisation :</h3>
+            <ul class="list">
+                <li><strong>Consulter les QCM disponibles :</strong> L'apprenant peut accéder à une liste de QCM créés par le formateur.</li>
+                <li><strong>Répondre à un QCM :</strong> L'apprenant peut répondre aux questions d'un QCM.</li>
+                <li><strong>Recevoir un feedback :</strong> Après chaque réponse, l'apprenant reçoit un feedback qui lui indique si la réponse est correcte ou incorrecte.</li>
+                <li><strong>Visualiser les résultats :</strong> L'apprenant peut consulter ses résultats après avoir terminé un QCM.</li>
+                <li><strong>Mode d’apprentissage adaptatif :</strong> Ce cas d’utilisation ajoute un mode où les questions du QCM s’adaptent en fonction des réponses de l'apprenant. Si l'apprenant répond mal, il reçoit une explication et des ressources pour améliorer ses connaissances.</li>
+            </ul>
+
+            <h3>Relations :</h3>
+            <ul class="list">
+                <li>L'apprenant interagit avec tous les cas d'utilisation :</li>
+                <ul class="list">
+                    <li>Consulter les QCM disponibles</li>
+                    <li>Répondre à un QCM</li>
+                    <li>Recevoir un feedback</li>
+                    <li>Visualiser les résultats</li>
+                    <li>Mode d’apprentissage adaptatif : Ce cas s’ajoute comme une fonctionnalité supplémentaire qui améliore l’expérience d'apprentissage.</li>
+                </ul>
+            </ul>
+
+            <h3>Comment l’idéation se reflète dans le cas d’utilisation :</h3>
+            <p><strong>Mode d’apprentissage adaptatif :</strong> Ce cas d’utilisation fait partie de l'idéation. Il montre que les questions du QCM ne sont pas fixes, mais ajustées dynamiquement en fonction des performances de l'apprenant. Par exemple, si l'apprenant commet des erreurs dans un domaine particulier, les prochaines questions seront liées à ce domaine, avec des explications et des ressources pour aider l'apprenant à progresser.</p>
+
+            <h3>Conclusion</h3>
+            <p>L'idéation consiste à améliorer l'expérience de l'apprenant en rendant l'interaction avec le QCM plus personnalisée et dynamique. Le diagramme de cas d'utilisation montre les différentes interactions de l'apprenant avec le système, y compris le <strong>mode d’apprentissage adaptatif</strong> qui ajustera les questions et fournira des ressources en fonction des besoins de l'apprenant.</p>
+        </div>
+    </div>
+    </section>
+
+    <section id="chapitre-6">
+        <h2>Chapitre 6 : Idéation</h2>
+        <p>
+            L'idée du mode d'apprentissage adaptatif pour le package <code>pkg_QCM-Apprenant</code> consiste à personnaliser l'expérience d'apprentissage de l'apprenant. En fonction des réponses de l'apprenant, les questions du QCM s'ajustent à son niveau.
+        </p>
+        <p>
+            Si l'apprenant répond incorrectement à une question, il reçoit immédiatement une explication et des ressources supplémentaires pour l'aider à progresser.
+        </p>
+    </section>
+
+    <section id="chapitre-7">
+        <h2>Chapitre 7 : Prototype</h2>
+        <p>Contenu du prototype.</p>
+    </section>
+
+    <footer>
+        <p>Réalisé par Dehbi Dina</p>
+        <p>Supervisé par Monsieur Fouad ESSARRAJ</p>
+    </footer>
+</body>
+</html>
+
+
+      
